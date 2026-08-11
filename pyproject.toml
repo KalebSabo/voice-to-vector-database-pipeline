@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-pipeline"
+version = "0.1.0"
+description = "A custom voice to vector database pipeline."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kaleb Sabo" }]
+dependencies = [
+    "openai-whisper",
+    "ollama",
+    "chromadb",
+]
+
+[project.scripts]
+voice-transcribe = "voice_pipeline.whisper.transcribe:main"
+voice-embed = "voice_pipeline.embedding.embed:main"
+voice-store = "voice_pipeline.vectorstore.store:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

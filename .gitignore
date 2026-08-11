@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Pipeline data artifacts (keep folder structure via .gitkeep)
+data/audio/pending/*
+!data/audio/pending/.gitkeep
+data/audio/transcribed/*
+!data/audio/transcribed/.gitkeep
+data/transcripts/base/*
+!data/transcripts/base/.gitkeep
+data/transcripts/pending/*
+!data/transcripts/pending/.gitkeep
+data/transcripts/embedded/*
+!data/transcripts/embedded/.gitkeep
+data/chroma/docs/text/*
+!data/chroma/docs/text/.gitkeep
+data/chroma/docs/vectorized/*
+!data/chroma/docs/vectorized/.gitkeep
+data/chroma/docs/collected_text/*
+!data/chroma/docs/collected_text/.gitkeep
+data/chroma/docs/collected_vectors/*
+!data/chroma/docs/collected_vectors/.gitkeep
+data/chroma/storage/*
+!data/chroma/storage/.gitkeep
+
+# Models / caches
+*.pt
+*.bin
+.cache/
