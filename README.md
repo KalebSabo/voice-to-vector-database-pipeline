@@ -1,6 +1,6 @@
 # voice-to-vector-database-pipeline
 
-A custom voice to vector database pipeline.
+A custom local voice to vector database pipeline.
 
 ## Features
 
